@@ -76,7 +76,7 @@ function Login() {
   </div>
   </div>
   <img src="https://th.bing.com/th/id/OIP.dS0bvCYhfDtB1HjK-46emAHaG2?w=204&h=188&c=7&r=0&o=5&dpr=1.5&pid=1.7"
- style={{width:"70%",height:"430px",alignSelf:"center",borderRadius:"10px"}}/>
+ style={{width:"72%",height:"430px",alignSelf:"center",borderRadius:"10px"}}/>
 
 
 
