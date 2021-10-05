@@ -28,7 +28,7 @@ function Login() {
           <a class="nav-link active" aria-current="page" href="#" style={{fontSize:17}}>Smartphones</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" style={{fontSize:17}}>Iphones</a>
+          <a class="nav-link" href="#" style={{fontSize:18}}>Iphones</a>
         </li>
         <li class="nav-item"> 
           <a class="nav-link"  href="#" style={{fontSize:17}}>Android</a>
