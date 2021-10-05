@@ -12,7 +12,7 @@ function Login() {
   }
   
     return (
-    <div>
+    <div style={{backgroundColor:"lightskyblue"}}>
 
 <div className="container mt-3">
       <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
@@ -37,26 +37,19 @@ function Login() {
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li> */}
       </ul>
+
     </div>
   </div>
 </nav>
     </div>
 
-<div className="App">
+<div className="App"  style={{width:"82%" ,marginLeft:"50px",display:"flex",justifyContent:"space-between"}}>
   <div className="container py-5">
   <div className="card border-0 shadow w-45 p-3 mx-auto"
           style={{ backgroundColor:"lightblue", borderRadius: "20PX" }}
           >
   
-  {/* <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-  </li> */}
+ 
         <h1 style={{color:"black"}}>Login</h1> <br/>
         <div class="form-floating mb-3">
   <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
@@ -74,15 +67,21 @@ function Login() {
 <hr></hr>
 {/* <h5>Or</h5>
 <h4 style={{color:"blue"}}> <BsFacebook/>Log in With Facebook</h4> */}
-<h6><b><Link to="/forget">Forgot Password....?</Link></b></h6>
-  </div>
-  </div>
-</div>
-
-  <div className="card border-0 shadow w-45 p-1 mx-auto"
-   style={{backgroundColor:"lightpink",  borderRadius: "20PX" }}>
+<h6><b><Link to="/forget">Forgot Password....?</Link></b></h6><br/>
+<div className="card border-0 shadow w-45 p-1 mx-auto"
+   style={{backgroundColor:"lightpink",  borderRadius: "20PX" ,width:"75%", textAlign:"left"}}>
          <h5><b>Don't have an account? <Link to="/register">Register</Link></b></h5>
   </div>
+
+  </div>
+  </div>
+  <img src="https://th.bing.com/th/id/OIP.dS0bvCYhfDtB1HjK-46emAHaG2?w=204&h=188&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+ style={{width:"70%",height:"430px",alignSelf:"center",borderRadius:"10px"}}/>
+
+
+
+  </div>
+ 
 
     </div>
     )
