@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
-import {BsFacebook} from 'react-icons/bs'
+import {BsFacebook} from 'react-icons/bs';
+
 function Login() {
 
   const [email, setEmail]=useState("")
@@ -8,7 +9,7 @@ function Login() {
 
   function onsub(){
     let item ={email,password};
-    console.log=(item)
+    console.log=(item);
   }
   
     return (
@@ -31,7 +32,7 @@ function Login() {
           <a class="nav-link" href="#" style={{fontSize:17}}>Iphones</a>
         </li>
         <li class="nav-item"> 
-          <a class="nav-link"  href="#" style={{fontSize:20}}>Android</a>
+          <a class="nav-link"  href="#" style={{fontSize:17}}>Android</a>
         </li>
         {/* <li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -41,10 +42,12 @@ function Login() {
   </div>
 </nav>
     </div>
-{/* <div class="card" style="width: 18rem;"> */}
+
 <div className="App">
   <div className="container py-5">
-  <div className="card border-0 shadow w-45 p-3 mx-auto">
+  <div className="card border-0 shadow w-45 p-3 mx-auto"
+          style={{ backgroundColor:"lightblue", borderRadius: "20PX" }}
+          >
   
   {/* <li class="nav-item">
     <a class="nav-link" href="#">Link</a>
@@ -55,38 +58,33 @@ function Login() {
   <li class="nav-item">
     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
   </li> */}
-        <h1>Login</h1> <br/>
+        <h1 style={{color:"black"}}>Login</h1> <br/>
         <div class="form-floating mb-3">
   <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
-  onChange={(e)=>{setEmail(e.target.value)}} value={email}/>
+  onChange={(e)=>{setEmail(e.target.value)}} name="email" value={email}/>
   <label for="floatingInput">Email address</label>
 </div>
 <div class="form-floating">
   <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
-  onChange={(e)=>{setPassword(e.target.value)}} value={password}/>
+  onChange={(e)=>{setPassword(e.target.value)}} name="password" value={password}/>
   <label for="floatingPassword">Password</label>
 </div>
 <br/>
 
 <button type="button" class="btn btn-primary" onClick={onsub}>Login</button>
 <hr></hr>
-<h5>Or</h5>
-<h4 style={{color:"blue"}}> <BsFacebook/>Log in With Facebook</h4>
-<h6><Link to="/">Forgot Password....?</Link></h6>
+{/* <h5>Or</h5>
+<h4 style={{color:"blue"}}> <BsFacebook/>Log in With Facebook</h4> */}
+<h6><b><Link to="/forget">Forgot Password....?</Link></b></h6>
   </div>
   </div>
 </div>
 
-
-  
-  <div className="card border-0 shadow w-45 p-1 mx-auto">
-         <h5>Don't have an account? <Link to="/">Register</Link></h5>
+  <div className="card border-0 shadow w-45 p-1 mx-auto"
+   style={{backgroundColor:"lightpink",  borderRadius: "20PX" }}>
+         <h5><b>Don't have an account? <Link to="/register">Register</Link></b></h5>
   </div>
-  
-  
 
- 
-{/* <Link to="/">User forgorn password..</Link>  */}
     </div>
     )
 }
