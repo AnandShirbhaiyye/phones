@@ -14,7 +14,7 @@ const Forget = () => {
       <div>
 
     <div className="container mt-3">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 <div class="container-fluid">
   <a class="navbar-brand" href="#" style={{fontSize:32}}>
 PHONES</a>
