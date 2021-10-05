@@ -11,10 +11,10 @@ const Forget = () => {
 
   return (
     <div className="App">
-      <div className="container py-5">
+      <div className="container " style={{ width: "63%" }}>
         <div
-          className="card border-0 shadow w-75 p-3 mx-auto "
-          style={{ backgroundColor: "lightgreen", borderRadius: "20PX" }}
+          className="card border-0 "
+          style={{ backgroundColor: "lightblue", borderRadius: "20PX" }}
         >
           <h1 className="text-center pt-3 text-success ">Forget Password</h1>
           <form className="row g-3">
