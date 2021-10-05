@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+
+import Switch from 'react-bootstrap/esm/Switch';
+import { Route, Router } from 'react-router';
 import './App.css';
+import Login from './component/Login';
+import { createBrowserHistory } from 'history';
 
 function App() {
+  const history = createBrowserHistory();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     
+        <Router history={history}>
+          <Switch>
+            <Route exact path="/" component = {Login}/>
+            {/* <Route exact path="register" component = {}/>
+            <Route exact path="forgot" component = {}/> */}
+          </Switch>
+        </Router>
+  
     </div>
   );
 }
